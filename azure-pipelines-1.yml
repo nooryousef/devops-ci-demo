@@ -17,3 +17,13 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'su-DevOps@52.170.56.134'
+    sourceFolder: 'web/'
+    contents: '**'
+    targetFolder: '/var/www/html'
+    cleanTargetFolder: true
+    readyTimeout: '20000'
+    failOnEmptySource: true
