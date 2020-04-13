@@ -30,3 +30,4 @@ steps:
     contents: '**'
     targetFolder: '/var/www/html/'
     readyTimeout: '20000'
+
