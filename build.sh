@@ -8,6 +8,10 @@ SERVER_NAME=$HOSTNAME
 PWD=$PWD
 
 
+echo " SERVER_NAME : $HOSTNAME "
+TIMESTAMP=$(/bin/date +%T)
+echo " $TIMESTAMP"
+
 
     
 
