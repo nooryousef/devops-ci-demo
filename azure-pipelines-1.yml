@@ -27,3 +27,13 @@ steps:
     cleanTargetFolder: true
     readyTimeout: '20000'
     failOnEmptySource: true
+
+    - task: CopyFilesOverSSH@0
+      inputs:
+        sshEndpoint: 'su-DevOps@52.170.56.134'
+        sourceFolder: 'web/'
+        contents: '**'
+        targetFolder: '/var/www/html/'
+        cleanTargetFolder: true
+        readyTimeout: '20000'
+        failOnEmptySource: true
