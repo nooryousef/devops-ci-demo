@@ -8,11 +8,10 @@ SERVER_NAME=$HOSTNAME
 PWD=$PWD
 
 
-echo " SERVER_NAME : $HOSTNAME "
-TIMESTAMP=$(/bin/date +%T)
-echo " $TIMESTAMP"
+time=$(/bin/date +%T)
 
-
+TIMESTAMP=$time
+echo TIMESTAMP
     
 
 # Replace values in index.html
