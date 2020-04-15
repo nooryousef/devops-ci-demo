@@ -5,7 +5,6 @@
  echo  $HOSTNAME 
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 
- 
 
 # Declare and initialize values
 SERVER=$HOSTNAME
