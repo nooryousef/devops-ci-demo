@@ -8,7 +8,7 @@
 
 # Declare and initialize values
 SERVER=$HOSTNAME
-  sed 's/{SERVER_NAME}/$SERVER/g ' web/index.html
+  sed 's/{SERVER_NAME}/$SERVER/g ' index.html
 
     
 
