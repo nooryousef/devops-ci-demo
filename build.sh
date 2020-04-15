@@ -3,7 +3,7 @@
 # Echo this is the build script
  echo "Building a webpage..."
  
- echo"$HOSTNAME"
+ echo  "$HOSTNAME"
 
 # Declare and initialize values
 SERVER=$HOSTNAME
