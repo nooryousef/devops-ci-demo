@@ -11,9 +11,8 @@ branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 SERVER=$HOSTNAME
 today=$(date +"%m-%d-%Y")
 dir=$PWD
-  sed "s/{SERVER_NAME}/$SERVER/g"  web/index.html
-  sed "s/{TIMESTAMP}/$today/g"  web/index.html 
-  sed "s/{PWD}/$dir/g"  web/index.html 
+  sed 's/{SERVER_NAME}/$SERVER/g '  web/index.html
+  sed -n 's/{TIMESTAMP}/$today/g'  web/index.html 
 
     
 
