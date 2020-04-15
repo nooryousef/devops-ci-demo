@@ -6,14 +6,13 @@ echo  $HOSTNAME
  echo $today
 
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
-SERVER=$hostname
 
 # Declare and initialize values
+SERVER=$hostname
 today=$(date +"%m-%d-%Y")
+PWD=$PWD
   sed "s/${SERVER_NAME}/$SERVER/g"  web/index.html
-  
   sed "s/{TIMESTAMP}/$today/g"  web/index.html 
-  
   sed "s/{PWD}/$PWD/g"  web/index.html 
 
     
