@@ -4,7 +4,6 @@
  echo "Building a webpage..."
  echo  $HOSTNAME 
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
-export SERVER_NAME=$(hostname)
  
 
 # Declare and initialize values
