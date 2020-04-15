@@ -8,9 +8,6 @@
 
 # Declare and initialize values
 SERVER_NAME=$HOSTNAME
-
-SERVER=$HOSTNAME
- NAME=$USER
   sed "s/{SERVER_NAME}/$SERVER_NAME/g ">web/index.txt
 
     
