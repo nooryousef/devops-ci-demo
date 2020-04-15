@@ -13,8 +13,8 @@ SERVER=$HOSTNAME
 today=$(date +"%m-%d-%Y")
 USR=$USER
   sed "s/{SERVER_NAME}/$SERVER/g"  index.txt
-  sed "s/{USER}/$USR/g" web/index.html
-  sed  "s/{TIMESTAMP}/$today/g"  web/index.html 
+  sed "s/{USER}/$USR/g" /web/index.html
+  sed  "s/{TIMESTAMP}/$today/g"  /web/index.html 
 
     
 
