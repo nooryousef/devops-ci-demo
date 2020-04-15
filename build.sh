@@ -3,7 +3,7 @@
 # Echo this is the build script
  echo "Building a webpage..."
  echo  " $HOSTNAME "
-HOSTNAME=$fv-az712
+ HOSTNAME=${fv-az719}
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
  
 
