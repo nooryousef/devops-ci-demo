@@ -12,7 +12,7 @@ SERVER=$HOSTNAME
 today=$(date +"%m-%d-%Y")
 dir=$PWD
   sed 's/{SERVER_NAME}/$SERVER/g '  web/index.html
-  sed -n 's/{TIMESTAMP}/$today/g'  web/index.html 
+  sed -i 's/{TIMESTAMP}/$today/g'  web/index.html 
 
     
 
