@@ -3,13 +3,13 @@
 # Echo this is the build script
  echo "Building a webpage..."
  
- echo  "$HOSTNAME"
+ echo  " $HOSTNAME "
  
 branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
 # Declare and initialize values
 SERVER=$HOSTNAME
-  sed "s/{SERVER_NAME}/$SERVER/g " web/index.txt
+  sed "s/{ SERVER_NAME }/$SERVER/g "  web/index.txt
 
     
 
