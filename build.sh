@@ -2,15 +2,13 @@
 
 # Echo this is the build script
  echo "Building a webpage..."
- echo  " $HOSTNAME "
- HOSTNAME=${fv-az719}
+ echo  $HOSTNAME 
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
  
 
 # Declare and initialize values
 SERVER=$HOSTNAME
   sed 's/{SERVER_NAME}/$SERVER/g ' web/index.html
-  sed -i "s/?(GIT_BRANCH)?$branch?g " index.html
 
     
 
