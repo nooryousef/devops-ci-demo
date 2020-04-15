@@ -9,7 +9,7 @@ branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 # Declare and initialize values
 SERVER=$HOSTNAME
   sed "s/{SERVER_NAME}/$SERVER/g" web/index.html
-  echo  " sed "s/{TIMESTAMP}/$(/bin/date/ +%y -%m -%d)/g" "  web/index.html 
+  echo  " sed "s/{TIMESTAMP}/$"$(/bin/date/ +%y -%m -%d)"/g" "  web/index.html 
 
     
 
