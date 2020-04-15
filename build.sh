@@ -9,7 +9,7 @@ export SERVER_NAME=$(hostname)
 
 # Declare and initialize values
 SERVER=$HOSTNAME
-  sed 's/{SERVER_NAME}/$noor/g ' web/index.html
+  sed 's/{SERVER_NAME}/$noor/g ' index.html
 
     
 
