@@ -10,7 +10,7 @@ branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 # Declare and initialize values
 SERVER=$HOSTNAME
   sed 's/{SERVER_NAME}/$SERVER/g ' web/index.html
-  sed -i 's/?(GIT_BRANCH)?$branch?g ' index.html
+  sed -i 's/?(GIT_BRANCH)?$branch?g ' web/index.html
 
     
 
