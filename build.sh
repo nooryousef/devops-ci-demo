@@ -2,7 +2,6 @@
 
 # Echo this is the build script
  echo "Building a webpage..."
- HOSTNAME=$NOOR
  echo  " $HOSTNAME "
  
 
