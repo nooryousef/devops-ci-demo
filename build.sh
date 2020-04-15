@@ -6,7 +6,7 @@ echo  $HOSTNAME
  echo $today
 
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
-SERVER=$HOSTNAME
+SERVER=$hostname
 
 # Declare and initialize values
 today=$(date +"%m-%d-%Y")
