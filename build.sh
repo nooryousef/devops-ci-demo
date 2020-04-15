@@ -16,7 +16,7 @@ USR=$USER
   sed "s/{USER}/$USR/"  web/index.html
   sed  "s/{TIMESTAMP}/$today/g"  web/index.html 
 
-    
+    echo   sed 's/{USER}/$USR/'
 
 # Replace values in index.html
 ## TODO: Replace {SEVER_NAME} with $SEVER_NAME
