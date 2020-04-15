@@ -2,7 +2,7 @@
 
 # Echo this is the build script
  echo "Building a webpage..."
-echo  $HOSTNAME 
+echo  $hostname
  echo $today
 
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
@@ -10,10 +10,10 @@ branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 # Declare and initialize values
 SERVER=$hostname
 today=$(date +"%m-%d-%Y")
-PWD=$PWD
+dir=$PWD
   sed "s/${SERVER_NAME}/$SERVER/g"  web/index.html
   sed "s/{TIMESTAMP}/$today/g"  web/index.html 
-  sed "s/{PWD}/$PWD/g"  web/index.html 
+  sed "s/{PWD}/$dir/g"  web/index.html 
 
     
 
