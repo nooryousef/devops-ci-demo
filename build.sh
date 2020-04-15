@@ -8,7 +8,7 @@ branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 
 # Declare and initialize values
 SERVER=$HOSTNAME
-  sed "s/{SERVER_NAME}/$noor/g" web/index.html
+  sed "s/{SERVER_NAME}/$HOSTNAME/g" web/index.html
   
 
     
