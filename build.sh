@@ -9,7 +9,7 @@ echo  $HOSTNAME
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 
 # Declare and initialize values
-SERVER=${HOSTNAME}
+SERVER= $(HOSTNAME)
 today=$(date +"%m-%d-%Y")
 USR=$USER
   sed  "s/{SERVER_NAME}/$SERVER/g"  web/index.html
