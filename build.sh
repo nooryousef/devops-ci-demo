@@ -18,7 +18,7 @@ R={$'https://github.com/nooryousef/devops-ci-demo'}
   sed -i "s/{SERVER_NAME}/${HOSTNAME} /g"  web/index.html
   sed -i "s/{USER}/${USER}/g"  web/index.html
   sed -i "s/{TIMESTAMP}/$today/g"  web/index.html 
-  sed -e "s/{GIT_REPO}/$R/g"  web/index.html
+  sed  "s/{GIT_REPO}/$R/g"  web/index.html
  
 
     
