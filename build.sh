@@ -13,12 +13,12 @@ branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 SERVER= $(HOSTNAME)
 today=$(date +"%m-%d-%Y")
 USR=$USER
-
+R={$'https://github.com/nooryousef/devops-ci-demo'}
 
   sed -i "s/{SERVER_NAME}/${HOSTNAME} /g"  web/index.html
   sed -i "s/{USER}/${USER}/g"  web/index.html
   sed -i "s/{TIMESTAMP}/$today/g"  web/index.html 
-  sed -i "s/{GIT_REPO}/${devops-ci-demo}/g"  web/index.html
+  sed -i "s/{GIT_REPO}/$R/g"  web/index.html
  
 
     
