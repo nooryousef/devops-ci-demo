@@ -5,6 +5,7 @@
  
 echo  $HOSTNAME
  echo $today
+ echo $GIT_REPO
 
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 
