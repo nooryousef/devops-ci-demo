@@ -13,7 +13,7 @@ branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 SERVER= $(HOSTNAME)
 today=$(date +"%m-%d-%Y")
 USR=$USER
-GIT_REPO=$build.sh
+GIT_REPO=${build.sh}
 
 
   sed -i "s/{SERVER_NAME}/${HOSTNAME} /g"  web/index.html
