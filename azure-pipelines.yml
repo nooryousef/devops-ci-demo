@@ -1,10 +1,4 @@
 # Starter pipeline
-- task: DownloadGitHubRelease@0
-  inputs:
-    connection: 'github.com_nooryousef'
-    userRepository: 'nooryousef/devops-ci-demo'
-    defaultVersionType: 'latest'
-    downloadPath: '$(System.ArtifactsDirectory)'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -29,18 +23,5 @@ steps:
   displayName: 'Run build script'
 
 # Start the deployment process
-- task: CopyFilesOverSSH@0
-  inputs:
-    sshEndpoint: 'su-DevOps@40.85.183.109'
-    sourceFolder: 'web/'
-    contents: '**'
-    targetFolder: '/var/www/html/'
-    readyTimeout: '20000'
-    - task: ArchiveFiles@2
-      inputs:
-        rootFolderOrFile: 'build/'
-        includeRootFolder: true
-        archiveType: 'tar'
-        archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-        replaceExistingArchive: true
+
 
