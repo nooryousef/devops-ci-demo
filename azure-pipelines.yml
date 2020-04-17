@@ -1,15 +1,10 @@
 # Starter pipeline
-- task: GitHubRelease@1
+- task: DownloadGitHubRelease@0
   inputs:
-    gitHubConnection: 'github.com_nooryousef'
-    repositoryName: '$(Build.Repository.Name)'
-    action: 'create'
-    target: '$(Build.SourceVersion)'
-    tagSource: 'gitTag'
-    tagPattern: 'noor'
-    title: 'new_release'
-    changeLogCompareToRelease: 'lastFullRelease'
-    changeLogType: 'commitBased'
+    connection: 'github.com_nooryousef'
+    userRepository: 'nooryousef/devops-ci-demo'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
