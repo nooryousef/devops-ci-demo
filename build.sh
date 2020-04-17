@@ -21,7 +21,7 @@ USR=$USER
   sed -i "s/{TIMESTAMP}/$today/g"  web/index.html 
   sed -i "s/{GIT_REPO}/${devops-ci-demo}/g"   web/index.html
 
-   sed -i "s~${PWD}~$PWD~g" web/index.html
+   sed -i "s~${PWD}~/home/vsts/work/1/s/web~g" web/index.html
    sed -i "s/{AZURE_VARIABLE}/${AZURE_VARIABLE}/g" web/index.html
    sed -i "s/{GIT_BRANCH}/$master/g" web/index.html
 
