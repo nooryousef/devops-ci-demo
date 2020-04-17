@@ -21,7 +21,7 @@ USR=$USER
   sed -i "s/{TIMESTAMP}/$today/g"  web/index.html 
   sed -i "s/{GIT_REPO}/${devops-ci-demo}/g"  web/index.html
 
-   sed -i 's/${PWD}/$pwd/g'  web/index.html
+   sed -i "s/${PWD}/$pwd/g" web/index.html
 
     
 
