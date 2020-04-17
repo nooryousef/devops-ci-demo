@@ -23,5 +23,12 @@ steps:
   displayName: 'Run build script'
 
 # Start the deployment process
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'su-DevOps@40.85.183.109'
+    sourceFolder: 'web/'
+    contents: '**'
+    targetFolder: '/var/www/html/'
+    readyTimeout: '20000'
 
 
