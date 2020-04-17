@@ -27,9 +27,9 @@ steps:
 #archive
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: 'build/'
+    rootFolderOrFile: 'web/'
     includeRootFolder: true
-    archiveType: 'zip'
+    archiveType: 'tar'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
 
