@@ -17,7 +17,9 @@ USR=$USER
   sed -i "s/{SERVER_NAME}/${HOSTNAME} /g"  web/index.html
   sed -i "s/{USER}/${USER}/g"  web/index.html
   sed -i "s/{TIMESTAMP}/$today/g"  web/index.html 
-  sed -i "s/{GIT_REPO}/{https://github.com/nooryousef/devops-ci-demo}/g"  web/index.html
+  sed -i "s/{GIT_REPO}/${nooryousef/devops-ci-demo}/g"  web/index.html
+  sed -i "s/{PWD}/$(pwd)/g"  web/index.html
+
  
 
     
