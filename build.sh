@@ -6,7 +6,7 @@
 echo  $HOSTNAME
  echo $today
  echo $REPO
- echo $PWD
+ 
 
 branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 
