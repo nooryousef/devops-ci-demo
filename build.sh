@@ -20,3 +20,4 @@ sed -i "s/{GIT_BRANCH}/$branch/g" web/index.html
 sed -i "s~{PWD}~$DIR~g" web/index.html
 sed -i "s/{USER}/$USR/g" web/index.html
 sed -i "s/{AZURE_VARIABLE}/${AZURE_VARIABLE}/g" web/index.html
+
