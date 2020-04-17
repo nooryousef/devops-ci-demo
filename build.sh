@@ -35,4 +35,4 @@ USR=$USER
 ## TODO: Replace {SEVER_NAME} with $SEVER_NAME
 echo " I am ${HOSTNAME} ."
 echo " the time is $(date +"%m-%d-%Y") "
-echo " the loged in user is: ${USER} "
+echo " the loged  user is: ${USER} "
