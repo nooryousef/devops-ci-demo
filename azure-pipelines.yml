@@ -36,4 +36,11 @@ steps:
     contents: '**'
     targetFolder: '/var/www/html/'
     readyTimeout: '20000'
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: 'build/'
+        includeRootFolder: true
+        archiveType: 'tar'
+        archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+        replaceExistingArchive: true
 
