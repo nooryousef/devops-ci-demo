@@ -14,7 +14,7 @@ branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 SERVER= $(HOSTNAME)
 today=$(date +"%m-%d-%Y")
 USR=$USER
- PWD=${/home/vsts/work/1/s/web}
+ PWD="${/home/vsts/work/1/s/web}"
 
   sed -i "s/{SERVER_NAME}/${HOSTNAME} /g"  web/index.html
   sed -i "s/{USER}/${USER}/g"  web/index.html
