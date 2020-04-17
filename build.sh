@@ -14,16 +14,16 @@ branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 SERVER= $(HOSTNAME)
 today=$(date +"%m-%d-%Y")
 USR=$USER
- PWD="${/home/vsts/work/1/s/web}"
+ PWD="$(pwd)
 
   sed -i "s/{SERVER_NAME}/${HOSTNAME} /g"  web/index.html
   sed -i "s/{USER}/${USER}/g"  web/index.html
   sed -i "s/{TIMESTAMP}/$today/g"  web/index.html 
   sed -i "s/{GIT_REPO}/${devops-ci-demo}/g"   web/index.html
 
-   sed -i "s/${PWD}/$PWD/g" web/index.html
+   sed -i "s~${PWD}~$PWD~g" web/index.html
    sed -i "s/{AZURE_VARIABLE}/${AZURE_VARIABLE}/g" web/index.html
-   sed -i "s/{GIT_BRANCH}/$master/g" web/index.html
+   sed -i "s?{GIT_BRANCH}?$branch?g" web/index.html
 
    
    
