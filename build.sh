@@ -6,9 +6,7 @@
 echo  $HOSTNAME
  echo $today
  echo $REPO
- 
 
-branch=$(git branch | sed -n -e 's /^\* \(.*\)/\1/p')
 
 # Declare and initialize values
 SERVER= $(HOSTNAME)
@@ -34,5 +32,5 @@ USR=$USER
 # Replace values in index.html
 ## TODO: Replace {SEVER_NAME} with $SEVER_NAME
 echo " I am ${HOSTNAME} ."
-echo " the time is $(date +"%m-%d-%Y") "
+echo "  $(date +"%m-%d-%Y") "
 echo " the loged  user is: ${USER} "
