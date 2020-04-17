@@ -23,7 +23,6 @@ USR=$USER
 
    sed -i "s~${PWD}~$PWD~g" web/index.html
    sed -i "s/{AZURE_VARIABLE}/${AZURE_VARIABLE}/g" web/index.html
-   sed -i "s?{GIT_BRANCH}?$branch?g" web/index.html
 
    
    
