@@ -24,6 +24,15 @@ steps:
   displayName: 'Run build script'
 
 
+#archive
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: 'build/'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
+
 
 
 # Start the deployment process
